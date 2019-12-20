@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene>
+    <testCase>
+        <!-- name属性为测试用例类的类名;id为代表每个参数的唯一标示 -->
+        <testClass name="Test2">
+            <param id="username" description="">第一个测试参数</param>
+            <param id="password" description="">第二个测试参数</param>
+            <param id="firstName" description="">第三个测试参数</param>
+            <param id="url" description="">第四个测试参数</param>
+        </testClass>
+    </testCase>
+
+</scene>

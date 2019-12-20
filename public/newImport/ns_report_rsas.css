@@ -1,0 +1,60 @@
+.level_danger {
+	MARGIN-LEFT: 4px; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.high.level_danger {
+	COLOR: #d30101
+}
+.middle.level_danger {
+	COLOR: #d53e00
+}
+.low.level_danger {
+	COLOR: #2c5eae
+}
+.safe.level_danger {
+	COLOR: #288603
+}
+.level_danger_high {
+	COLOR: #e42b00
+}
+.level_danger_middle {
+	COLOR: #af6100
+}
+.level_danger_low {
+	COLOR: #737373
+}
+.detail {
+	BORDER-BOTTOM: #c2c2c2 1px dashed; BORDER-LEFT: #c2c2c2 1px dashed; PADDING-BOTTOM: 8px; LINE-HEIGHT: 20px; MARGIN: 3px 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; DISPLAY: none; BORDER-TOP: #c2c2c2 1px dashed; BORDER-RIGHT: #c2c2c2 1px dashed; PADDING-TOP: 8px
+}
+TABLE.solution {
+	DISPLAY: none
+}
+TABLE.solution TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 20px; VERTICAL-ALIGN: top; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 8px
+}
+TABLE.report_table TD.right {
+	TEXT-ALIGN: right
+}
+TABLE.inner_table {
+	MARGIN-LEFT: 14px
+}
+.center {
+	TEXT-ALIGN: center
+}
+.font_high {
+	COLOR: #e42b00
+}
+.font_middle {
+	COLOR: #ff821d
+}
+.font_low {
+	COLOR: #eaba1e
+}
+.font_safe {
+	COLOR: #98c94b
+}
+.font_total {
+	COLOR: #1b609a
+}
+.font_bold {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}

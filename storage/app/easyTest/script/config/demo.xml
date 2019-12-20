@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+    <connection description="浏览器及server地址">
+        <hub browser="FF" enabled="True">http://10.10.12.103:5555/wd/hub</hub>
+        <hub browser="Chrome" enabled="False">http://10.10.12.103:5556/wd/hub</hub>
+        <hub browser="IE" enabled="False">http://10.10.12.103:5557/wd/hub</hub>
+    </connection>
+    <scene description="脚本执行顺序为子标签排列顺序">
+        <testCase paramPath="U商城/登录" enabled="True">U商城/公共/登录</testCase>
+        <testCase paramPath="U商城/登录" enabled="True">U商城/公共/登录2</testCase>
+        <testCase paramPath="U商城/登录" enabled="True">U商城/公共/登录</testCase>
+        <testCase paramPath="U商城/登录" enabled="True">U商城/公共/登录</testCase>
+    </scene>
+</catalog>

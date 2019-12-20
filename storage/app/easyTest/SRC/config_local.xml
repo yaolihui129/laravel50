@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <testCase>
+        <!--运行模式：Remote模式，Browser模式 -->
+        <runType description="运行模式" default="Remote">Remote</runType>
+        <xmlDir description="测试用例配置文件夹路径" default="script/xml/">script/config/</xmlDir>
+    </testCase>
+    <parameterization>
+        <!-- 参数化数据驱动，每次启动运行次数，执行完一轮所有脚本算做一次，当传入的参数组的数量小于运行次数的时候，循环读取参数组 -->
+        <runTime description="运行次数" default="1">1</runTime>
+        <dataDir description="本地参数化数据文件夹路径" default="/script/data/">/script/data/</dataDir>
+    </parameterization>
+    <report>
+        <!-- 截图开关：True：开启截图，False：关闭截图-->
+        <isScreenShot description="截图开关" default="True">True</isScreenShot>
+        <!-- 打印日志开关：True：开启打印日志，False：关闭打印日志-->
+        <isWriteLog description="打印日志开关" default="True">True</isWriteLog>
+        <!-- 日志中是否显示查找元素信息：True：显示，False：不显示-->
+        <showFindElementLog description="日志中是否显示查找元素信息" default="True" >True</showFindElementLog>
+        <!-- 日志打印级别 1级：业务级别 2级：包含断言（默认） 3级：代码级别 -->
+        <logLevel description="本地日志输出级别" default="2">2</logLevel>
+        <!-- 相对路径：相对于本项目，也可以使用绝对路径 -->
+        <logDir description="本地日志文件夹路径" default="script/report/log/">/script/report/log/</logDir>
+        <screenShotDir description="本地截图文件夹路径" default="script/report/image/">/script/report/image/</screenShotDir>
+    </report>
+    <server>
+        <!-- 发送日志到服务器的开关：True：发送日志，False 不发送日志-->
+        <isRequest description="发送日志到服务器开关" default="True">True</isRequest>
+        <requestURL description="日志发送URL" default="http://10.10.12.176/uds_bak/public/">
+            http://10.10.12.176/uds_bak/public/
+        </requestURL>
+    </server>
+
+    <driver>
+        <!-- 驱动参数配置 -->
+        <implicitlyWait description="查找元素隐式等待时间(秒)" default="20">30</implicitlyWait>
+        <afterFindElementWait description="找到元素后固定的等待时间(秒)" default="0.5">0.5</afterFindElementWait>
+        <afterActionWait description="操作(如点击)后固定的等待时间(秒)" default="0">0</afterActionWait>
+        <repeatFindTime description="当找不到元素时重复查找的次数" default="10">10</repeatFindTime>
+        <maximizeWindow description="启动浏览器最大化窗口" default="True">True</maximizeWindow>
+    </driver>
+    <browser>
+        <fireFox description="本地火狐浏览器参数配置">
+            <param description="启动程序所在目录" name="binary_location" default="">
+            </param>
+        </fireFox>
+        <chrome description="本地谷歌浏览器参数配置">
+            <!-- 启动程序路径通过右键谷歌浏览器exe文件查看属性获取  -->
+            <param description="启动程序路径" name="binary_location" default="">
+            </param>
+        </chrome>
+    </browser>
+
+</config>
