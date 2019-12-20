@@ -47,6 +47,11 @@ return [
 			'driver' => 'local',
 			'root'   => storage_path().'/app',
 		],
+		'public' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public'),
+            'visibility' => 'public',
+        ],
 		'upload'=>[
           'driver'=>'local',
             'root'=>base_path().'/database/schemes/easyTest/SRC/app',

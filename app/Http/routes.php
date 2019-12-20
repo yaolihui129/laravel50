@@ -469,4 +469,28 @@ Route::resource("/exam/question","Exam\ExamController@question");
 
 
 
+/**
+ * YonSuite质量全景分析
+ */
+Route::group ( [
+    'prefix'=>'camp',
+    'namespace' => 'Campaign',
+//    'middleware' => 'auth'
+], function () {
+    Route::group ( [
+        'prefix' => 'ys',
+    ], function () {
+        //初始化页面
+        Route::get('/ysIndex',"YsController@index");
+        //初始化版本号
+        Route::get('/getVersion',"VersionController@getVersion");
+        //初始化集成号
+        Route::get('/getIntegrate',"IntegrateController@getIntegrate");
+        //获取资源
+        Route::get('/getYSResource',"YsController@getYSResource");
+
+    } );
+} );
+
+
 
